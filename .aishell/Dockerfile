@@ -3,7 +3,7 @@ FROM aishell:base
 RUN apt-get update  \
     && apt-get -y --no-install-recommends install  \
         # install any other dependencies you might need
-        sudo curl git ca-certificates build-essential \
+        sudo curl git ca-certificates build-essential tmux \
     && rm -rf /var/lib/apt/lists/*
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
