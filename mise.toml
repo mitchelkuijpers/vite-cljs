@@ -1,0 +1,4 @@
+[tools]
+clojure = "1.12.4.1602"
+java = "26"
+node = "24"
